@@ -51,19 +51,19 @@ var setContect = function (str_contect) {
     $('#contect').html("판매자 연락처<br>" + str_contect);
 }
 var setPrice =function(str_price) {
-    $('.price').html(str_price + "￦");
+    $('.price').html("￦" + str_price);
 }
 
 var setTag = function(arr_tag) {
     var tag_length = arr_tag.length;
     var tags = "";
-    
+
     for(var i = 0; i < tag_length; i++) {
         tags += "#";
         tags += arr_tag[i];
         tags += " ";
     }
-    
+
     $('.tags').html(tags);
 }
 
